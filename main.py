@@ -534,7 +534,7 @@ righthand_files = {
 }
 
 ## Generate Traits
-TOTAL_IMAGES = 100 # Number of random unique images we want to generate
+TOTAL_IMAGES = 7018 # Number of random unique images we want to generate
 
 all_images = [] 
 
