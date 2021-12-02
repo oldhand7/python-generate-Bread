@@ -560,7 +560,7 @@ def create_new_image():
 
     # rule 1
     if 'Space Helmet' in new_image ['Hat']:
-        if 'Green Visor' in new_image ['Eyeacc'] or 'Book' in new_image ['Lefthand']:
+        if 'Green Visor' in new_image ['Eyeacc'] or 'Book' in new_image ['Lefthand'] or 'Aviators' in new_image ['Eyeacc'] or 'Soccer Balls' in new_image ['Acc']:
             return create_new_image()
             
         mouth_arr = [
@@ -687,7 +687,7 @@ def create_new_image():
 
     # rule 13
     if 'Ski Goggles' in new_image ['Eyes']:
-        if 'Surgeon Cap' in new_image ['Hat']:
+        if 'Surgeon Cap' in new_image ['Hat'] or 'Hoagie Mouth' in new_image ['Mouth']:
             return create_new_image()
 
     # rule 14
@@ -708,6 +708,10 @@ def create_new_image():
     # rule 16
     if 'Sombrero' in new_image['Hat'] or 'Beanie' in new_image['Hat']:
         if 'Cane' in new_image ['Righthand'] or 'Rolling Pin' in new_image ['Righthand']:
+             return create_new_image()
+
+    if 'Sombrero' in new_image['Hat']:
+        if 'VR Goggles' in new_image ['Eyes'] or 'Ski Goggles' in new_image ['Eyes']:
              return create_new_image()
 
     # rule 16
@@ -764,6 +768,11 @@ def create_new_image():
 
     if 'Gold' in new_image ['Skin']:
         new_image ['Shoes'] = 'Gold'
+
+    
+    if 'Hard Hat' in new_image ['Hat']:
+        if 'Ski Goggles' in new_image ['Eyes'] or 'Aviators' in new_image ['Eyeacc'] or 'Cat Eye Sunglasses' in new_image ['Eyeacc'] or 'VR Goggles' in new_image ['Eyes'] :
+            return create_new_image()
 
     if new_image in all_images:
         return create_new_image()
